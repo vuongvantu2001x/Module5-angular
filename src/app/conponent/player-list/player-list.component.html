@@ -1,0 +1,20 @@
+<p>player-list works!</p>
+<h3><a routerLink="/players/create">Create Player</a></h3>
+<table *ngFor="let p of players; index as i">
+  <tr>
+    <td>Name:</td>
+    <td><a [routerLink]="['/books/view',p.id]">{{p.name}}</a></td>
+  </tr>
+  <tr>
+    <td>Champ:</td>
+    <td>{{p.champ}}</td>
+  </tr>
+  <tr>
+    <td>KDA:</td>
+    <td>{{p.kda}}</td>
+  </tr>
+  <tr>
+    <td>Description:</td>
+    <td>{{p.des}}</td>
+  </tr>
+</table>
