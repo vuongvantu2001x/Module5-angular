@@ -5,7 +5,6 @@ import { PlayerRoutingModule } from './player-routing.module';
 import {PlayerCreateComponent} from '../../conponent/player-create/player-create.component';
 import {PlayerEditComponent} from '../../conponent/player-edit/player-edit.component';
 import {PlayerViewComponent} from '../../conponent/player-view/player-view.component';
-import {PlayerDeleteComponent} from '../../conponent/player-delete/player-delete.component';
 import {PlayerListComponent} from '../../conponent/player-list/player-list.component';
 import {ReactiveFormsModule} from '@angular/forms';
 
@@ -14,7 +13,6 @@ import {ReactiveFormsModule} from '@angular/forms';
   declarations: [PlayerCreateComponent,
     PlayerEditComponent,
     PlayerViewComponent,
-    PlayerDeleteComponent,
   PlayerListComponent],
   imports: [
     CommonModule,

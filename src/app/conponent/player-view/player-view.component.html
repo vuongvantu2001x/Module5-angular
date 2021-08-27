@@ -18,6 +18,6 @@
   </tr>
   <tr>
     <td><button [routerLink]="['/players/edit',player.id]">Edit</button></td>
-    <td><button [routerLink]="['/players/delete',player.id]">Delete</button></td>
+    <td><input type="button" (click)="Delete(player.id)" value="Delete"></td>
   </tr>
 </table>

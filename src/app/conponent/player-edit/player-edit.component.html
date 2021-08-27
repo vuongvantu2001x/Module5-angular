@@ -1,1 +1,25 @@
-<p>player-edit works!</p>
+<h1>Cập nhật thông tin player</h1>
+<form [formGroup]="playerForm" (ngSubmit)="updatePlayer(id)">
+  <table>
+    <tr>
+      <td>Name:</td>
+      <td><input type="text" formControlName="name"></td>
+    </tr>
+    <tr>
+      <td>Champ:</td>
+      <td><input type="text" formControlName="champ" ></td>
+    </tr>
+    <tr>
+      <td>KDA:</td>
+      <td><input type="text" formControlName="kda"></td>
+    </tr>
+    <tr>
+      <td>Description:</td>
+      <td><input type="text" formControlName="des" ></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button>Cập nhật</button></td>
+    </tr>
+  </table>
+</form>

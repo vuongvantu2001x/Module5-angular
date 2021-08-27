@@ -32,4 +32,14 @@ export class PlayerViewComponent implements OnInit {
       this.player = result;
     });
   }
+  // tslint:disable-next-line:typedef
+  Delete(id: any) {
+    if (confirm('Bạn chắc chắn muốn xóa ?')) {
+      this.playerService.deletePlayer(id).subscribe(() => {
+        this.router.navigate(['/players']);
+      }, e => {
+        console.log(e);
+      });
+    }
+  }
 }
