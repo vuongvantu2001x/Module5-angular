@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {PlayerService} from '../../service/player.service';
 
 @Component({
   selector: 'app-player-delete',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlayerDeleteComponent implements OnInit {
 
-  constructor() { }
+  constructor(private playerService: PlayerService) { }
 
   ngOnInit(): void {
   }

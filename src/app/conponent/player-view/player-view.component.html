@@ -1,1 +1,23 @@
 <p>player-view works!</p>
+<table>
+  <tr>
+    <td>Name:</td>
+    <td>{{player.name}}</td>
+  </tr>
+  <tr>
+    <td>Champ:</td>
+    <td>{{player.champ}}</td>
+  </tr>
+  <tr>
+    <td>KDA:</td>
+    <td>{{player.kda}}</td>
+  </tr>
+  <tr>
+    <td>Description:</td>
+    <td>{{player.des}}</td>
+  </tr>
+  <tr>
+    <td><button [routerLink]="['/players/edit',player.id]">Edit</button></td>
+    <td><button [routerLink]="['/players/delete',player.id]">Delete</button></td>
+  </tr>
+</table>

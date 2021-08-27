@@ -3,18 +3,10 @@
 <table *ngFor="let p of players; index as i">
   <tr>
     <td>Name:</td>
-    <td><a [routerLink]="['/books/view',p.id]">{{p.name}}</a></td>
+    <td><a [routerLink]="['/players/view',p.id]">{{p.name}}</a></td>
   </tr>
   <tr>
     <td>Champ:</td>
     <td>{{p.champ}}</td>
-  </tr>
-  <tr>
-    <td>KDA:</td>
-    <td>{{p.kda}}</td>
-  </tr>
-  <tr>
-    <td>Description:</td>
-    <td>{{p.des}}</td>
   </tr>
 </table>

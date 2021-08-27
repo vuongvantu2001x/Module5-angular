@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PlayerListComponent } from './conponent/player-list/player-list.component';
 import {HttpClientModule} from '@angular/common/http';
 
 ;
@@ -11,12 +10,12 @@ import {HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
-    PlayerListComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

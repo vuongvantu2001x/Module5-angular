@@ -6,16 +6,20 @@ import {PlayerCreateComponent} from '../../conponent/player-create/player-create
 import {PlayerEditComponent} from '../../conponent/player-edit/player-edit.component';
 import {PlayerViewComponent} from '../../conponent/player-view/player-view.component';
 import {PlayerDeleteComponent} from '../../conponent/player-delete/player-delete.component';
+import {PlayerListComponent} from '../../conponent/player-list/player-list.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 
 @NgModule({
   declarations: [PlayerCreateComponent,
     PlayerEditComponent,
     PlayerViewComponent,
-    PlayerDeleteComponent],
+    PlayerDeleteComponent,
+  PlayerListComponent],
   imports: [
     CommonModule,
-    PlayerRoutingModule
+    PlayerRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class PlayerModule { }
